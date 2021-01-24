@@ -2,6 +2,7 @@ import numpy as np
 import imutils
 import cv2
 
+
 class Panaroma:
 
     def image_stitch(self, images, lowe_ratio=0.75, max_Threshold=4.0,match_status=False):
@@ -82,6 +83,7 @@ class Panaroma:
         vis[0:hB, wA:] = imageB
 
         return vis
+
 
 
     def draw_Matches(self, imageA, imageB, KeypointsA, KeypointsB, matches, status):

@@ -13,6 +13,7 @@ for i in range(no_of_images):
 
 images = []
 
+
 for i in range(no_of_images):
     images.append(cv2.imread(filename[i]))
 
@@ -34,6 +35,7 @@ else:
 #cv2.imshow("Keypoint Matches", matched_points)
 cv2.imshow("StitchedImmage", result)
 cv2.imwrite("Result.jpg",result)
+
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
